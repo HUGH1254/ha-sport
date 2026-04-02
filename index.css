@@ -36,7 +36,6 @@ a{
     display: flex;
     justify-content: center;
     gap:72px;
-    max-height: 378px;
 }
 .main__menu--list{
     width: 100%;
@@ -342,11 +341,8 @@ a{
 
 }
 .main__menu{
-    display: flex;
     padding: 48px;
-    justify-content: center;
-    gap:72px;
-    max-height: 378px;
+    max-height: 400px;
 }
 .main__menu--list{
     display: block;
