@@ -13,7 +13,8 @@
     box-sizing: border-box;
     font-family: "Syne", sans-serif;
 }
-a{
+a{  
+    color: unset;
     text-decoration: none;
 }
 .text-20-bold{
@@ -46,7 +47,6 @@ a{
     width: 100%;
     overflow-y: auto;
     display: flex;
-    
 }
 .main__menu--menu-list
 {
@@ -256,6 +256,21 @@ a{
 .header__menu{
     height: 37px;
 }
+.main__menu--popup{
+    max-width: 400px;
+    height: 100dvh;
+    background-color: var(--color-1);
+    padding: 20px;
+    text-align: center;
+
+}
+.main__menu--popup .main__menu--list{
+    display: block;
+    width: 100%;
+}
+.main__menu--popup .main__menu--icon{
+    display: block;
+}
 @media (min-width: 500px) and (min-height:768px){
     .sidebar{
         flex-direction: row-reverse;
@@ -381,10 +396,6 @@ a{
 .main__menu--size-image{
     width: 250px;
     height: 250px;
-}
-.main__menu--item{  
-    flex-direction: column;
-    justify-content: center;
 }
 .main__menu .text-18-regular{
     color: var(--color-2);
