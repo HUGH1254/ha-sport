@@ -34,14 +34,21 @@ a{
 
 .main__menu{
     display: flex;
-    padding: 48px;
     justify-content: center;
     gap:72px;
     max-height: 378px;
 }
 .main__menu--list{
-    width: 274px;
+    width: 100%;
     overflow-y: auto;
+    display: flex;
+    
+}
+.main__menu--menu-list
+{
+    flex:1;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .main__menu--label{
     position: relative;
@@ -78,7 +85,7 @@ a{
     height: 24px;
     right: 0;
     transition: .3s;
-    
+    display: none;
 }
 .main__menu--image{
     display: flex;
@@ -106,7 +113,7 @@ a{
     margin-top: 14px;
 }
 .main__menu--image {
-    overflow-y: auto;
+    display: none;
 }
 .header{
     width: 100%;
@@ -333,5 +340,79 @@ a{
     background-color: var(--color-2);
     color: var(--color-3);
 
+}
+.main__menu{
+    display: flex;
+    padding: 48px;
+    justify-content: center;
+    gap:72px;
+    max-height: 378px;
+}
+.main__menu--list{
+    width: 274px;
+    overflow-y: auto;
+}
+.main__menu--label{
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+.main__menu--hidden{
+    max-height: 0px;
+    overflow: hidden;
+    position: relative;
+    top:-100%;
+    transition: .3s;
+    opacity:0;
+}
+.main__menu--list input:checked ~ .main__menu--hidden{
+    max-height: none;
+    top:0;
+    opacity: 1;
+}
+.main__menu--list input:checked + label .main__menu--icon{
+   transform: rotate(90deg);
+}
+.main__menu--list .main__menu--item {
+   
+    display: flex;
+    align-items: flex-start;
+    border-bottom:  1px solid var(--color-6);
+    height: 52px;
+}
+.main__menu--icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 0;
+    transition: .3s;
+    
+}
+.main__menu--image{
+    display: flex;
+    gap:24px;
+    align-items: flex-start;
+    flex:1;
+    overflow-y: auto;
+}
+.main__menu--size-image{
+    width: 250px;
+    height: 250px;
+}
+.main__menu--item{
+    flex: 0 0 calc((100% / 5 ) - (96px / 4));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-5);
+    position: relative;
+}
+.main__menu .text-18-regular{
+    color: var(--color-2);
+}
+.main__menu--image .text-18-regular{
+    margin-top: 14px;
 }
  }
