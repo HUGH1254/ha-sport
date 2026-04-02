@@ -53,7 +53,7 @@ a{
     flex:1;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: var(--color-1);
+    background-color: var(--color-3);
 }
 .main__menu--label{
     position: relative;
@@ -93,12 +93,7 @@ a{
     transition: .3s;
     display: none;
 }
-.main__menu--image{
-    display: flex;
-    gap:24px;
-    align-items: flex-start;
-    flex:1;
-}
+
 .main__menu--size-image{
     width: 250px;
     height: 250px;
@@ -357,7 +352,6 @@ a{
 .main__menu--list{
     display: block;
     width: 274px;
-    overflow-y: auto;
 }
 .main__menu--label{
     position: relative;
@@ -365,14 +359,7 @@ a{
     display: flex;
     z-index: 1;
 }
-.main__menu--hidden{
-    max-height: 0px;
-    overflow: hidden;
-    position: relative;
-    top:-100%;
-    transition: .3s;
-    opacity:0;
-}
+
 .main__menu--list input:checked ~ .main__menu--hidden{
     max-height: none;
     top:0;
@@ -381,13 +368,7 @@ a{
 .main__menu--list input:checked + label .main__menu--icon{
    transform: rotate(90deg);
 }
-.main__menu--list .main__menu--item {
-   
-    display: flex;
-    align-items: flex-start;
-    border-bottom:  1px solid var(--color-6);
-    height: 52px;
-}
+
 .main__menu--icon{
    display: block;
     
