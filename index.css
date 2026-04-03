@@ -139,6 +139,7 @@ a{
     gap:55px;
     margin-right: 10px;
     margin-left: 10px;
+    overflow: auto;
 }
 .hero-text{
     overflow-wrap: break-word; 
@@ -229,7 +230,7 @@ a{
     width: 100%;
     margin-left: 16px;
     background-color: unset;
-    color: var(--color-3);
+    color: var(--color-5);
 
 }
 .sidebar{
@@ -256,17 +257,29 @@ a{
 .header__menu{
     height: 37px;
 }
+#test:checked ~ .main__menu__mb{
+    left: 0;
+}
 .main__menu__mb{
     max-width: 400px;
-    height: 100dvh;
+    height: 100%;
     background-color: var(--color-1);
     padding: 20px;
     text-align: center;
-
+    position: absolute;
+    z-index: 102;
+    left: -100%;
+    transition: 2s;
+    top: 0;
+}
+.main__menu__mb .main__menu-icon--item{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .main__menu__mb .main__menu--list{
     display: block;
-    width: 100%;
+    width: 350px;
 }
 .main__menu__mb .main__menu--icon{
     display: block;
@@ -360,7 +373,7 @@ a{
     /* dropdown từ trên xg đưới */
     padding: 48px;
     max-height: 400px;
-    background-color: var(--color-4);
+    background-color: var(--color-3);
 }
 .main__menu--list{
     display: block;
