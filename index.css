@@ -38,12 +38,12 @@ a{
     position: absolute;
     display: flex;
     justify-content: center;
-    gap:72px;
     z-index: 1;
-    top:100px;
+    top:140px;
     left: 0;
     transition: .2s;
     opacity: 0;
+    visibility: hidden;
 }
 .main__menu--list{
     width: 100%;
@@ -132,7 +132,8 @@ a{
     height:37px;
 }
 .header__icon{
-    display: none;
+    
+    visibility: hidden;
     height: 37px;
     gap:26px
 }
@@ -141,7 +142,8 @@ a{
     height: 77px;
 }
 .header__nav{
-    display: none;
+   
+    visibility: hidden;
     gap:55px;
     margin-right: 10px;
     margin-left: 10px;
@@ -245,7 +247,6 @@ a{
     border: none;
     height: 100%;
     width: 100%;
-    margin-left: 16px;
     background-color: unset;
     color: var(--color-5);
     cursor: pointer;
@@ -279,8 +280,8 @@ a{
     left: 0;
 }
 #test2:checked ~ .header .main__menu{
-    top:148px;
     opacity: 1;
+    visibility: visible;
 }
 .main__menu__mb{
     max-width: 400px;
@@ -332,6 +333,7 @@ transform: rotate(90deg);
 }
 .header__icon{
     display: flex;
+    visibility: visible;
 }
 .header__menu{
     display: none;
@@ -342,6 +344,7 @@ transform: rotate(90deg);
 }
 .header__nav{
     display: flex;
+    visibility: visible;
 }
 .hero__content{
     flex-wrap: nowrap;
@@ -392,9 +395,6 @@ transform: rotate(90deg);
     margin:0;
 }
 .hero-info--btn{
-    border: none;
-    height: 100%;
-    width: 100%;
     margin-left: 16px;
     background-color: var(--color-2);
     color: var(--color-3);
