@@ -256,7 +256,7 @@ a{
 .header__menu{
     height: 37px;
 }
-.main__menu--popup{
+.main__menu__mb{
     max-width: 400px;
     height: 100dvh;
     background-color: var(--color-1);
@@ -264,11 +264,11 @@ a{
     text-align: center;
 
 }
-.main__menu--popup .main__menu--list{
+.main__menu__mb .main__menu--list{
     display: block;
     width: 100%;
 }
-.main__menu--popup .main__menu--icon{
+.main__menu__mb .main__menu--icon{
     display: block;
 }
 @media (min-width: 500px) and (min-height:768px){
