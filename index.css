@@ -186,10 +186,9 @@ a{
 .hero__btn button {
     min-width: 54px;
     min-height: 16px;
-    background:url('icon/direction.svg') no-repeat;
-    background-size: contain;
     cursor: pointer;
     border: none;
+    background: unset;
 }
 .hero__btn .next{
     transform: rotate(-180deg);
