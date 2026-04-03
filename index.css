@@ -189,6 +189,8 @@ a{
     cursor: pointer;
     border: none;
     background: unset;
+    display: flex;
+    align-items: center;
 }
 .hero__btn .next{
     transform: rotate(-180deg);
