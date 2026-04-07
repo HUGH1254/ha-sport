@@ -307,11 +307,11 @@
                 <img src="icon/cart.svg" alt="" class=" image-icon">
             </a>
         </div>
-        <nav class="header__menu">
+        <nav class="header__menu" id="header__menu">
             <img src="icon/menu.svg" alt="" class="image-icon">
         </nav>
 
-        <div class="main__menu__mb">
+        <div class="main__menu__mb" id="main__menu__mb">
             <div class="main__menu--list">
                 <p class="main__menu--item text-20-bold">MENU</p>
                 <div class="main__menu--item">
@@ -414,6 +414,12 @@
                 $(this).toggleClass("active");
             });
         });
+        $("document").ready(function () {
+            $("#header__menu").click(function (e) {
+                $('#main__menu__mb').toggleClass("active");
+            });
+        });
+        
     </script>
 </body>
 
