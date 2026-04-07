@@ -321,6 +321,9 @@ a {
 #test:checked~.header .main__menu__mb {
     left: 0;
 }
+.main__menu__mb.active{
+    left: 0;
+}
 
 #test2:checked~.header .main__menu {
     opacity: 1;
